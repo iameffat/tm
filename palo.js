@@ -33,7 +33,7 @@
     }
 
     function addDownloadButton() {
-        var button = $("<button>Save Images HTML 2</button>");
+        var button = $("<button>Save Images HTML 23</button>");
         button.css({
             "position": "fixed",
             "bottom": "10px",
