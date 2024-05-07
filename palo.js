@@ -53,9 +53,6 @@
 
     $(document).ready(function(){
         addDownloadButton();
-        $("img[highres]").click(function(){
-            $('.prev, .next').css('display', 'block');
-        });
     });
 
 })();
