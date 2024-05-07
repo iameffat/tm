@@ -1,6 +1,8 @@
 (function() {
     'use strict';
 
+    var slideIndex = 1; // Add slideIndex variable declaration
+
     function downloadImages() {
         var images = [];
         var today = new Date().toLocaleDateString().split('/').reverse().join('-');
@@ -21,7 +23,7 @@
         });
 
         htmlContent += "<a class='prev' onclick='plusSlides(-1)'>&#10094;</a><a class='next' onclick='plusSlides(1)'>&#10095;</a>";
-        htmlContent += "</div><script>var slideIndex = 1;showSlides(slideIndex);function plusSlides(n) {showSlides(slideIndex += n);}function showSlides(n) {var i;var slides = document.getElementsByClassName('slides');if (n > slides.length) {slideIndex = 1} if (n < 1) {slideIndex = slides.length} for (i = 0; i < slides.length; i++) {slides[i].style.display = 'none';} slides[slideIndex-1].style.display = 'block';}</script></body></html>";
+        htmlContent += "</div><script>function plusSlides(n) {showSlides(slideIndex += n);}function showSlides(n) {var i;var slides = document.getElementsByClassName('slides');if (n > slides.length) {slideIndex = 1} if (n < 1) {slideIndex = slides.length} for (i = 0; i < slides.length; i++) {slides[i].style.display = 'none';} slides[slideIndex-1].style.display = 'block';}</script></body></html>";
 
         var blob = new Blob([htmlContent], {type: "text/html"});
         var link = document.createElement("a");
