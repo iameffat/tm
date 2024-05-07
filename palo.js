@@ -1,13 +1,3 @@
-// ==UserScript==
-// @name         Prothom Alo Epaper Image Save
-// @namespace    https://effat.namespace/
-// @version      0.1
-// @description  Download all images from Prothom Alo ePaper and create a slider
-// @author       You
-// @match        https://epaper.prothomalo.com/*
-// @grant        none
-// ==/UserScript==
-
 (function() {
     'use strict';
 
