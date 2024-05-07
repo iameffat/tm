@@ -35,7 +35,7 @@
     }
 
     function addDownloadButton() {
-        var button = $("<button>Save Images HTML 420</button>");
+        var button = $("<button>Save Images HTML</button>");
         button.css({
             "position": "fixed",
             "bottom": "10px",
